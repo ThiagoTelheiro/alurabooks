@@ -6,6 +6,10 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <link
       href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
       rel="stylesheet"
     />
@@ -82,6 +86,81 @@
     </section>
     <section class="carrosel">
       <h2 class="carrosel__titulo">Útimos lançamentos</h2>
+      <div class="swiper">
+        <div class="swiper-pagination"></div>
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <img
+              src="imagens/Acessibilidade.svg"
+              alt="Livro sobre Acessibilidade web da alura"
+            />
+          </div>
+          <div class="swiper-slide">
+            <img
+              src="imagens/Portugol.svg"
+              alt="Livro sobre Portugol da Alura "
+            />
+          </div>
+          <div class="swiper-slide">
+            <img
+              src="imagens/Lideranc╠ºa.svg"
+              alt="Livro sobre liderança em desing da Alura"
+            />
+          </div>
+
+          <div class="swiper-slide">
+            <img
+              src="imagens/Guia Front-end.svg"
+              alt="Livro sobre guia front-end da Alura"
+            />
+          </div>
+
+          <div class="swiper-slide">
+            <img
+              src="imagens/Javascript.svg"
+              alt="Livro sobre guia Javascript acertivo da Alura"
+            />
+          </div>
+        </div>
+
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+      </div>
+
+      <div class="card">
+        <div class="card__descricao">
+          <div class="descricao">
+            <h3 class="descricao__titulo">
+              Talvez você também se interesse por...
+            </h3>
+            <h2 class="decricao__titulo-livro">Angular 11 e Firebase</h2>
+            <p class="descricao__texto">
+              Construindo uma aplicação integrada com a plataforma do Google.
+            </p>
+          </div>
+          <img class="descricao__imagem" src="imagens/Angular.svg" alt="Imagem Angular">
+        </div>
+
+        <div class="card__botoes">
+          <ul class="botoes">
+            <li class="botoes__item"><img src="imagens/Favoritos.svg" alt="Adicionar aos favoritos"></li>
+            <li class="botoes__item"><img src="imagens/Compras.svg" alt="Adicionar ao carrinho de compras"></li>
+          </ul>
+          <a class="botoes__ancora" href="#">Saiba mais</a>
+        </div>
+      </div>
     </section>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script>
+      const swiper = new Swiper(".swiper", {
+        spaceBetween: 10,
+        slidesPerView: 3,
+        pagination: {
+          el: ".swiper-pagination",
+          type: "bullets",
+        },
+      });
+    </script>
   </body>
 </html>
