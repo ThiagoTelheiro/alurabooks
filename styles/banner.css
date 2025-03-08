@@ -23,6 +23,7 @@
   border-radius: 24px;
   padding: 0.719em 0;
   width: 100%;
+  padding-left: 1em;
 }
 
 .banner__pesquisa::placeholder {
