@@ -33,7 +33,8 @@
 .card__descricao {
   display: flex;
   justify-content: space-between;
-  margin-bottom: 0.5em;
+  gap: 0.5em;
+  margin-bottom: 1em;
 }
 
 .descricao__titulo {
@@ -73,4 +74,8 @@
     padding: 0.75em 2.2em;
     text-decoration: none;
     font-weight: bold;
+}
+
+.card__estrelinhas {
+  margin-bottom: 0.563em;
 }
