@@ -24,6 +24,10 @@
   padding: 1em;
 }
 
+.container__titulo {
+  display: none;
+}
+
 .lista-menu {
   display: none;
   position: absolute;
@@ -56,4 +60,18 @@
 .lista-menu__item {
   background-color: var(--branco);
   padding: 1em;
+}
+
+@media screen and (min-width: 1024px) {
+
+  .container__titulo {
+    display: block;
+    font-family: var(--font-josefin);
+    font-size: 1.875rem;
+    font-weight: 400;
+  }
+
+  .container__titulo-negrito {
+    font-weight: 700;
+  }
 }
