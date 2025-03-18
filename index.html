@@ -55,10 +55,43 @@
           <b class="container__titulo-negrito">Alura</b>Books
         </h1>
       </div>
+
+      <ul class="opcoes">
+        <li class="opcoes__item">
+          <input type="checkbox" id="opcoes__menu" class="opcoes__botao" />
+          <label for="opcoes__menu" class="opcoes__link">Categorias</label>
+
+          <ul class="lista-menu">
+            <li class="lista-menu__item">
+              <a href="#" class="lista-menu__link">Programação</a>
+            </li>
+            <li class="lista-menu__item">
+              <a href="#" class="lista-menu__link">Front-end</a>
+            </li>
+            <li class="lista-menu__item">
+              <a href="#" class="lista-menu__link">Infraestrutura</a>
+            </li>
+            <li class="lista-menu__item">
+              <a href="#" class="lista-menu__link">Business</a>
+            </li>
+            <li class="lista-menu__item">
+              <a href="#" class="lista-menu__link">Design & UX</a>
+            </li>
+          </ul>
+        </li>
+
+        <li class="opcoes__item">
+          <a class="opcoes__link" href="#">Favoritos</a>
+        </li>
+        <li class="opcoes__item">
+          <a class="opcoes__link" href="#">Minha estante</a>
+        </li>
+      </ul>
+
       <div class="container">
         <a href="#">
           <img
-            class="container__imagem"
+            class="container__imagem container__imagem__none"
             src="imagens/Favoritos.svg"
             alt="Logo aba favoritos"
           />
@@ -282,10 +315,12 @@
     </section>
 
     <section class="contato">
-      <h2 class="contato__titulo">Fique por dentro das novidades!</h2>
-      <p class="contato__texto">
-        Atualizações de e-books, novos livros, promoções e outros.
-      </p>
+      <div class="contato__descricao">
+        <h2 class="contato__titulo">Fique por dentro das novidades!</h2>
+        <p class="contato__texto">
+          Atualizações de e-books, novos livros, promoções e outros.
+        </p>
+      </div>
       <input
         class="contato__email"
         type="search"
@@ -297,6 +332,13 @@
 
     <footer class="rodape">
       <h2 class="rodape__titulo">Grupo Alura</h2>
+      <ul class="lista-rodape">
+        <li class="lista-rodape__titulo">Educação</li>
+        <li class="lista-rodape__item">
+          <img src="imagens/CasaDoCodigo.svg" alt="Logo da casa do codigo" />
+        </li>
+        <a class="lista-rodape__link" href="#">Casa do Codigo</a>
+      </ul>
     </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
