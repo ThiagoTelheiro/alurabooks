@@ -4,15 +4,33 @@
   font-weight: 400;
 }
 
+.lista-rodape {
+  display: none;
+}
+
 @media screen and (min-width: 1024px) {
   .rodape {
     display: flex;
     justify-content: space-around;
     padding: 3.5em 0 4.375em 0;
-  } 
+  }
 
   .rodape__titulo {
     padding: 0;
+    font-size: 1.5rem;
+  }
+
+  .lista-rodape__titulo {
+    font-size: 0.875rem;
+    color: var(--cinza-claro);
+    text-transform: uppercase;
+    margin-bottom: 0.563em;
+  }
+
+  .lista-rodape {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
   }
 
   .lista-rodape__item {
