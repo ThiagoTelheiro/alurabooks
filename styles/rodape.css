@@ -5,6 +5,24 @@
 }
 
 @media screen and (min-width: 1024px) {
+  .rodape {
+    display: flex;
+    justify-content: space-around;
+    padding: 3.5em 0 4.375em 0;
+  } 
+
   .rodape__titulo {
+    padding: 0;
+  }
+
+  .lista-rodape__item {
+    display: flex;
+    align-items: center;
+    gap: 0.5em;
+  }
+
+  .lista-rodape__link {
+    text-decoration: none;
+    color: var(--cinza);
   }
 }
