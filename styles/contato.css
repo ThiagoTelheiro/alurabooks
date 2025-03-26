@@ -60,3 +60,13 @@ hr {
     width: 30%;
   }
 }
+
+@media screen and (min-width: 1728px) {
+  .contato {
+    padding: 1.5em 15vw;
+  }
+
+  .contato__email {
+    width: 25%;
+  }
+}
